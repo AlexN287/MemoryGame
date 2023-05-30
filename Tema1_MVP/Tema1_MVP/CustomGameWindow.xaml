@@ -1,0 +1,30 @@
+﻿<Window x:Class="Tema1_MVP.CustomGameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1_MVP"
+        mc:Ignorable="d"
+        Title="CustomGameWindow" Height="450" Width="800">
+    
+    
+    <Grid>
+        <ItemsControl Name="itemsControl" ItemsSource="{Binding ButtonMatrix}" Margin="0,100,200,0">
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <UniformGrid Name="uniformGrid" Rows="{Binding rows}" Columns="{Binding columns}" />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Button Click="Button_Cards">
+
+                        <Image Name="cardImage" Source="{Binding cardBackFace}" Width="50" Height="50" />
+
+                    </Button>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+    </Grid>
+</Window>

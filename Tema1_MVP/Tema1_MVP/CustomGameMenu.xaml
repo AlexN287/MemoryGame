@@ -1,0 +1,22 @@
+﻿<Window x:Class="Tema1_MVP.CustomGameMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1_MVP"
+        mc:Ignorable="d"
+        Title="CustomGameMenu" Height="450" Width="800">
+    <Grid Margin="288,392,337,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="111*"/>
+            <ColumnDefinition Width="64*"/>
+        </Grid.ColumnDefinitions>
+       
+            <TextBox x:Name="rowsTextbox" Grid.ColumnSpan="2" Margin="78,-273,-15,273" />
+            <TextBox x:Name="columnsTextBox" Grid.ColumnSpan="2" Margin="79,-186,-15,186"/>
+
+    
+
+        <Button x:Name="playButton" Content="Play" Click="Button_Play" Margin="56,-42,-37,42" Grid.ColumnSpan="2"/>
+    </Grid>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window x:Class="Tema1_MVP.Statistics"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1_MVP"
+        mc:Ignorable="d"
+        Title="Statistics" Height="450" Width="800">
+    <Grid>
+        <Label Name="nameLabel" Content="{Binding playerName}" HorizontalAlignment="Center" Margin="0,181,0,-181" />
+        <Label Name="gamesWonLabel" Content="{Binding gamesWon}" HorizontalAlignment="Center" Margin="0,199,0,-199"/>
+        <Label Name="gamesPlayedLabel" Content="{Binding gamesPlayed}" HorizontalAlignment="Center" Margin="0,217,0,-217"/>
+    </Grid>
+</Window>

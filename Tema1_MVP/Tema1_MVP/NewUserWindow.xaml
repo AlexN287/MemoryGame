@@ -1,0 +1,28 @@
+﻿<Window x:Class="Tema1_MVP.NewUserWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1_MVP"
+        mc:Ignorable="d"
+        Title="NewUserWindow" Height="450" Width="800">
+    <Grid>
+
+        <Button Content="Sign In" Margin="96,333,490,48" Click="Button_SignIn"/>
+        <Button Content="Cancel" Margin="486,333,100,48" Click="Button_Cancel" />
+
+        <UniformGrid Rows="1" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+            <Button Content="Previous" Margin="20,0,40,150" Click="Button_Previous" />
+            <Button Content="Next" Margin="20,0,40,150" Click="Button_Next" />
+        </UniformGrid>
+
+        <UniformGrid Rows="1" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBox Name="NameTextBox" Margin="0,30,10,0"/>
+            <Label Content="Name" Margin="20,30,10,0"/>
+        </UniformGrid>
+        
+
+
+        <Image Name="AvatarImage" Source="C:\facultate\Anul2\Sem2\MVP\Tema1_MVP\Tema1_MVP\images.png" Margin="100,100,100,200"/>
+    </Grid>
+</Window>

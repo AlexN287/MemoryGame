@@ -1,0 +1,14 @@
+﻿<Window x:Class="Tema1_MVP.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Tema1_MVP"
+        mc:Ignorable="d"
+        Title="AboutWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Negut Alexandru-Gabriel" HorizontalAlignment="Center" Margin="0,181,0,-181" />
+        <Label Content="Grupa 10lf312" HorizontalAlignment="Center" Margin="0,199,0,-199"/>
+        <Label Content="Informatica Aplicata" HorizontalAlignment="Center" Margin="0,217,0,-217"/>
+    </Grid>
+</Window>

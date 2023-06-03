@@ -33,7 +33,7 @@ namespace Tema1_MVP
                 MessageBox.Show("Invalid input");
             }
 
-            bool result2 = int.TryParse(columnsTextBox.Text, out columns);
+            
             if (!result)
             {
                 MessageBox.Show("Invalid input");

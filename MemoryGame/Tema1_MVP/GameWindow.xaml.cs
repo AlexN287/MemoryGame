@@ -126,10 +126,7 @@ namespace Tema1_MVP
 
         private void Button_Start(object sender, RoutedEventArgs e)
         {
-            timer = new DispatcherTimer();
-            timer.Interval = TimeSpan.FromSeconds(1);
-            timer.Tick += Timer_Tick;
-            timer.Start();
+            startTimer();
             isStartPressed = true;
         }
 
